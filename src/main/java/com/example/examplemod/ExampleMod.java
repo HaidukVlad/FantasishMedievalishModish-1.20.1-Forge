@@ -34,7 +34,7 @@ public class ExampleMod {
                     .icon(() -> ModItems.RUBY.get().getDefaultInstance())
                     .displayItems((params, output) -> {
                         output.accept(ModItems.RUBY.get());
-                        output.accept(ModItems.MY_SWORD.get());
+                        output.accept(ModItems.PALACHE.get());
                     })
                     .build());
 

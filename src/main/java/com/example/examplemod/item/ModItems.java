@@ -14,6 +14,7 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> MY_SWORD = ITEMS.register("my_sword",
-            () -> new SwordItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> PALACHE = ITEMS.register("palache",
+            PalacheItem::new);
+
 }
