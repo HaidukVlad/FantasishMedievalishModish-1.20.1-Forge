@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -31,18 +32,22 @@ public class ExampleMod {
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB =
             CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
                     .withTabsBefore(CreativeModeTabs.COMBAT)
-                    .icon(() -> ModItems.RUBY.get().getDefaultInstance())
+                    .icon(() -> ModItems.PALACHE.get().getDefaultInstance())
                     .displayItems((params, output) -> {
-                        output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.PALACHE.get());
+                        output.accept(ModItems.ORICHALCUM_INGOT.get());
+                        output.accept(ModItems.ORICHALCUM_BLOCK.get()); // Используем BlockItem
+                        output.accept(ModItems.ORICHALCUM_ORE.get());   // Используем BlockItem
                     })
                     .build());
+
 
     public ExampleMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

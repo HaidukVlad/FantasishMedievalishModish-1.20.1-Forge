@@ -20,7 +20,7 @@ import java.util.Random;
 import java.util.UUID;
 
 public class PalacheItem extends SwordItem {
-    private int hitCombo = 0;
+    private float hitCombo = 0;
 
     public PalacheItem() {
         super(Tiers.IRON, 3, -2.4F, new Item.Properties());
@@ -28,7 +28,7 @@ public class PalacheItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        // ✅ Сплэш-урон по ближайшим врагам
+        // Сплэш-урон по ближайшим врагам
         if (!attacker.level().isClientSide && attacker instanceof Player player) {
             double splashRadius = 2.0; // Радиус действия
 
@@ -39,13 +39,13 @@ public class PalacheItem extends SwordItem {
                 }
             }
 
-            // ✅ 20% шанс наложить эффект замедления
+            // 20% шанс наложить эффект замедления
             if (new Random().nextFloat() < 0.2f) {
                 target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1)); // 3 секунды
             }
 
-            // ✅ Увеличивающийся урон при сериях попаданий
-            hitCombo++;
+            // Увеличивающийся урон при сериях попаданий
+            hitCombo += 0.5F;
             target.hurt(attacker.damageSources().playerAttack(player), hitCombo); // дополнительный урон
         }
 

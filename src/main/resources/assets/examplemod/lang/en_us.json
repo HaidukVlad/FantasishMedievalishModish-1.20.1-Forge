@@ -1,5 +1,9 @@
 {
-  "item.examplemod.ruby": "Ruby",
-  "item.examplemod.palache": "My Custom Sword",
-  "itemGroup.examplemod.example_tab": "Example Mod Tab"
+    "itemGroup.examplemod.example_tab": "Example Mod Tab",
+    "item.examplemod.palache": "Palache",
+    "item.examplemod.orichalcum_ingot": "Orichalcum Ingot",
+    "item.examplemod.orichalcum_block": "Orichalcum Block",
+    "item.examplemod.orichalcum_ore": "Orichalcum Ore",
+    "block.examplemod.orichalcum_block": "Orichalcum Block",
+    "block.examplemod.orichalcum_ore": "Orichalcum Ore"
 }

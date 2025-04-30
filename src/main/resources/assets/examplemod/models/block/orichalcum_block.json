@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_all",
+	"texture_size": [32, 32],
+	"textures": {
+		"all": "examplemod:block/orichalcum_block"
+	}
+}
