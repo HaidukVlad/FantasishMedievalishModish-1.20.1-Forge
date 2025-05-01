@@ -1,0 +1,7 @@
+{
+  "_comment": "Biome Modifier для добавления орихалковой руды в биомы",
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "examplemod:orichalcum_ore",
+  "step": "underground_ores"
+}

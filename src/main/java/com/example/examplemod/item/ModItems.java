@@ -4,8 +4,6 @@ import com.example.examplemod.ExampleMod;
 import com.example.examplemod.block.ModBlocks;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,7 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> ORICHALCUM_INGOT = ITEMS.register("orichalcum_ingot",
             OrichalcumIngot::new);
 
-    // Добавляем BlockItem для блоков
+    public static final RegistryObject<Item> RAW_ORICHALCUM = ITEMS.register("raw_orichalcum",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ORICHALCUM_BLOCK = ITEMS.register("orichalcum_block",
             () -> new BlockItem(ModBlocks.ORICHALCUM_BLOCK.get(), new Item.Properties()));
 

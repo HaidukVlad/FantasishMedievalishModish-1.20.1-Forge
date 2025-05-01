@@ -36,8 +36,9 @@ public class ExampleMod {
                     .displayItems((params, output) -> {
                         output.accept(ModItems.PALACHE.get());
                         output.accept(ModItems.ORICHALCUM_INGOT.get());
-                        output.accept(ModItems.ORICHALCUM_BLOCK.get()); // Используем BlockItem
-                        output.accept(ModItems.ORICHALCUM_ORE.get());   // Используем BlockItem
+                        output.accept(ModItems.ORICHALCUM_BLOCK.get());
+                        output.accept(ModItems.ORICHALCUM_ORE.get());
+                        output.accept(ModItems.RAW_ORICHALCUM.get());
                     })
                     .build());
 
