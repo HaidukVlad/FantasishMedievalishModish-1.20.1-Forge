@@ -8,7 +8,7 @@
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "minecraft:stone"
+          "block": "minecraft:deepslate"
         },
         "state": {
           "Name": "examplemod:orichalcum_ore"
