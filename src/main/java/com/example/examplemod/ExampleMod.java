@@ -2,6 +2,9 @@ package com.example.examplemod;
 
 import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModItems;
+
+import com.example.examplemod.worldgen.ModConfiguredFeatures;
+import com.example.examplemod.worldgen.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -42,10 +45,8 @@ public class ExampleMod {
                     })
                     .build());
 
-
     public ExampleMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
-
         modEventBus.addListener(this::commonSetup);
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
@@ -54,6 +55,7 @@ public class ExampleMod {
         MinecraftForge.EVENT_BUS.register(this);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM COMMON SETUP");
@@ -73,3 +75,4 @@ public class ExampleMod {
         }
     }
 }
+

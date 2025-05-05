@@ -1,10 +1,9 @@
 {
-  "_comment": "Placed Feature для размещения орихалковой руды",
   "feature": "examplemod:orichalcum_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 5
+      "count": 12
     },
     {
       "type": "minecraft:in_square"
@@ -13,11 +12,11 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": 50
+        },
         "min_inclusive": {
           "absolute": -64
-        },
-        "max_inclusive": {
-          "absolute": -50
         }
       }
     },
