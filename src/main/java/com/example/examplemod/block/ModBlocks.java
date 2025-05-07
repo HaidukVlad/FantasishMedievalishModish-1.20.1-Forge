@@ -16,6 +16,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORICHALCUM_ORE = BLOCKS.register("orichalcum_ore",
            () -> new OrichalcumOre());
 
+    public static final RegistryObject<Block> DEEPSLATE_ORICHALCUM_ORE = BLOCKS.register("deepslate_orichalcum_ore",
+            () -> new DeepslateOrichalcumOre());
+
 
     public static final RegistryObject<Block> ORICHALCUM_BLOCK = BLOCKS.register("orichalcum_block",
             () -> new OrichalcumBlock());

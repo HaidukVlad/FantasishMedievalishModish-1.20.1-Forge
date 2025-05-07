@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "examplemod:orichalcum_ore"
+    "examplemod:orichalcum_ore",
+    "examplemod:deepslate_orichalcum_ore"
   ]
 }

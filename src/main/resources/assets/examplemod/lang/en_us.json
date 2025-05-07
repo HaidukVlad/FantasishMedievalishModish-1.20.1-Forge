@@ -6,5 +6,6 @@
     "item.examplemod.orichalcum_ore": "Orichalcum Ore",
     "item.examplemod.raw_orichalcum": "Raw Orichalcum",
     "block.examplemod.orichalcum_block": "Orichalcum Block",
-    "block.examplemod.orichalcum_ore": "Orichalcum Ore"
+    "block.examplemod.orichalcum_ore": "Orichalcum Ore",
+    "block.examplemod.deepslate_orichalcum_ore": "Deepslate Orichalcum Ore"
 }

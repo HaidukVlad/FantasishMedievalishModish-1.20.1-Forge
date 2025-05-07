@@ -6,11 +6,11 @@
     "targets": [
       {
         "state": {
-          "Name": "examplemod:orichalcum_ore"
+          "Name": "examplemod:deepslate_orichalcum_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:stone_ore_replaceables"
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       }
     ]

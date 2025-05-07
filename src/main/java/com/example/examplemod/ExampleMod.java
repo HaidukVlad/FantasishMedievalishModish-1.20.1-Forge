@@ -41,6 +41,7 @@ public class ExampleMod {
                         output.accept(ModItems.ORICHALCUM_INGOT.get());
                         output.accept(ModItems.ORICHALCUM_BLOCK.get());
                         output.accept(ModItems.ORICHALCUM_ORE.get());
+                        output.accept(ModItems.DEEPSLATE_ORICHALCUM_ORE.get());
                         output.accept(ModItems.RAW_ORICHALCUM.get());
                     })
                     .build());

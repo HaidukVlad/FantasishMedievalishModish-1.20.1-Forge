@@ -1,4 +1,7 @@
-// 1.20.1	2025-05-05T19:13:52.949066	Registries
+// 1.20.1	2025-05-06T17:55:27.79831	Registries
+28ee59135204762d3cf9655f1a7cd7a898a277b9 data/examplemod/forge/biome_modifier/add_deepslate_orichalcum_ore.json
 e82cb7ca6f5f047663197dbb28fa87ff9914b967 data/examplemod/forge/biome_modifier/add_orichalcum_ore.json
-9ed244a0a9a227902d7a778aeffe28636a2f39bd data/examplemod/worldgen/configured_feature/orichalcum_ore.json
+7fc145e129a968297f72df2ee1c102b916b396e3 data/examplemod/worldgen/configured_feature/deepslate_orichalcum_ore.json
+78aac738c810769de68b2d216ef0115f9aeef302 data/examplemod/worldgen/configured_feature/orichalcum_ore.json
+7e5f63a3d8a6f7660bd656d4c19148f4f763a9be data/examplemod/worldgen/placed_feature/deepslate_orichalcum_ore_placed.json
 b5da947df6419f1da2d6e074e9895b4a530c636d data/examplemod/worldgen/placed_feature/orichalcum_ore_placed.json
