@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ORICHALCUM_ORE = registerKey("add_orichalcum_ore");
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_ORICHALCUM_ORE = registerKey("add_deepslate_orichalcum_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SOLAR_CRYSTAL_ORE = registerKey("add_solar_crystal_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -30,6 +31,12 @@ public class ModBiomeModifiers {
         context.register(ADD_DEEPSLATE_ORICHALCUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_ORICHALCUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Модификатор для руды солнечного кристалла
+        context.register(ADD_SOLAR_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOLAR_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

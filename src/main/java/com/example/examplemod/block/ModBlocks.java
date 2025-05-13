@@ -22,4 +22,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ORICHALCUM_BLOCK = BLOCKS.register("orichalcum_block",
             () -> new OrichalcumBlock());
+
+    public static final RegistryObject<Block> SOLAR_CRYSTAL_ORE = BLOCKS.register("solar_crystal_ore",
+            () -> new SolarCrystalOre());
 }

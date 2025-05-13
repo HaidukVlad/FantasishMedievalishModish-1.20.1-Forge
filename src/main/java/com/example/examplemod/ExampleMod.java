@@ -43,6 +43,8 @@ public class ExampleMod {
                         output.accept(ModItems.ORICHALCUM_ORE.get());
                         output.accept(ModItems.DEEPSLATE_ORICHALCUM_ORE.get());
                         output.accept(ModItems.RAW_ORICHALCUM.get());
+                        output.accept(ModItems.SOLAR_CRYSTAL_ORE.get());
+                        output.accept(ModItems.SOLAR_CRYSTAL.get());
                     })
                     .build());
 

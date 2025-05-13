@@ -3,8 +3,11 @@
   "item.examplemod.orichalcum_ingot": "Слиток орихалка",
   "item.examplemod.orichalcum_block": "Блок орихалка",
   "item.examplemod.orichalcum_ore": "Блок орихалковой руды",
+  "item.examplemod.solar_crystal_ore": "Блок руды солнечного кристалла",
   "item.examplemod.raw_orichalcum": "Необработанный орихалк",
+  "item.examplemod.solar_crystal": "Солнечный кристалл",
   "block.examplemod.orichalcum_block": "Блок орихалка",
   "block.examplemod.orichalcum_ore": "Блок орихалковой руды",
-  "block.examplemod.deepslate_orichalcum_ore": "Орихалконосный глубинный сланец"
+  "block.examplemod.deepslate_orichalcum_ore": "Орихалконосный глубинный сланец",
+  "block.examplemod.solar_crystal_ore": "Блок руды солнечного кристалла"
 }

@@ -21,19 +21,27 @@ import java.util.Vector;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ORICHALCUM_ORE_PLACED_KEY = registerKey("orichalcum_ore_placed");
     public static final ResourceKey<PlacedFeature> DEEPSLATE_ORICHALCUM_ORE_PLACED_KEY = registerKey("deepslate_orichalcum_ore_placed");
+    public static final ResourceKey<PlacedFeature> SOLAR_CRYSTAL_ORE_PLACED_KEY = registerKey("solar_crystal_ore_placed");
+
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         // Размещение обычной орихалковой руды
         register(context, ORICHALCUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORICHALICUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(50))));
+                ModOrePlacement.commonOrePlacement(6,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(17), VerticalAnchor.absolute(25))));
 
         // Размещение глубинной орихалковой руды
         register(context, DEEPSLATE_ORICHALCUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_ORICHALICUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
+                ModOrePlacement.commonOrePlacement(8,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(16))));
+
+        // Размещение руды солнечного кристалла
+        register(context, SOLAR_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOLAR_CRYSTAL_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(8,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(50), VerticalAnchor.absolute(255))));
+
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

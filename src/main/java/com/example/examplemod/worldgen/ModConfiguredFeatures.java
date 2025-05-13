@@ -23,6 +23,8 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORICHALICUM_ORE_KEY = registerKey("orichalcum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEEPSLATE_ORICHALICUM_ORE_KEY = registerKey("deepslate_orichalcum_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SOLAR_CRYSTAL_ORE_KEY = registerKey("solar_crystal_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -39,6 +41,12 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get().defaultBlockState())
         );
         register(context, DEEPSLATE_ORICHALICUM_ORE_KEY, Feature.ORE, new OreConfiguration(deepslateOrichalcumOres, 9));
+
+        // Конфигурация для руды солнечного кристалла
+        List<OreConfiguration.TargetBlockState> solarCrystalOres = List.of(
+                OreConfiguration.target(stoneReplaceable, ModBlocks.SOLAR_CRYSTAL_ORE.get().defaultBlockState())
+        );
+        register(context, SOLAR_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(solarCrystalOres, 9));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

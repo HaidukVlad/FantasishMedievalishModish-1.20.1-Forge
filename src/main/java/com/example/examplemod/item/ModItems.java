@@ -28,4 +28,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> DEEPSLATE_ORICHALCUM_ORE = ITEMS.register("deepslate_orichalcum_ore",
             () -> new BlockItem(ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SOLAR_CRYSTAL_ORE = ITEMS.register("solar_crystal_ore",
+            () -> new BlockItem(ModBlocks.SOLAR_CRYSTAL_ORE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SOLAR_CRYSTAL = ITEMS.register("solar_crystal",
+            () -> new Item(new Item.Properties()));
 }
